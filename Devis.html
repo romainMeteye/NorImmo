@@ -20,29 +20,33 @@
 <body>
 
  <main>
-    <h2>Faire un devis en ligne</h2>
-    <form>
-      <fieldset>
-        <legend>Merci de remplir tous les champs suivants:</legend>
-        <!-- number of square metre-->
-            <label for="area">Superficie en m²:</label><br>
-            <input type="number" id="area" name="area" placeholder="Ex: 75"><br><br>
-        <!-- number of room -->
-            <label for="room">Nombre de chambre(s):</label><br>
-            <input type="number" id="room" name="room" placeholder="Ex: 4"><br><br>
-        <!-- material drop-down -->
-            <label for="materials">Le matériau de construction:</label><br>
-            <select id="materials" name="materials">
-            <option value="0.2">Parpaing</option>
-            <option value="0.15">Bois</option>
-            <option value="0.3">Brique</option>
-            </select><br><br>
-        <!-- input button -->
-            <input id="submitbtn" type="submit" value="Valider">
-        <!-- estimate -->
-            <legend>Le coût approximatif de votre projet immobilier est de:</legend><br>
-            <output id="estimate"></output>
-      </fieldset>
+    <h2 class="display-2 text-center text-decoration-underline my-5">Faire un devis en ligne</h2>
+    <form class="container">
+      <div class="row justify-content-between align-items-center">
+        <fieldset class="col-12 col-sm-5 border py-2 mb-3">
+            <legend>Merci de remplir tous les champs suivants:</legend>
+          <!-- number of square metre-->
+              <label for="area">Superficie en m²:</label><br>
+              <input type="number" id="area" name="area" placeholder="Ex: 75"><br><br>
+          <!-- number of room -->
+              <label for="room">Nombre de chambre(s):</label><br>
+              <input type="number" id="room" name="room" placeholder="Ex: 4"><br><br>
+          <!-- material drop-down -->
+              <label for="materials">Le matériau de construction:</label><br>
+              <select id="materials" name="materials">
+              <option value="0.2">Parpaing</option>
+              <option value="0.15">Bois</option>
+              <option value="0.3">Brique</option>
+              </select><br><br>
+          <!-- input button -->
+              <input id="submitbtn" class="btn btn-primary" type="submit" value="Valider">
+        </fieldset>
+          <!-- estimate -->
+        <fieldset class="col-12 col-sm-5 border py-2">
+          <legend>Le coût approximatif de votre projet immobilier est de:</legend><br>
+            <output id="estimate" class="display-6"></output>
+        </fieldset>
+      </div>
     </form>
  </main>
 
