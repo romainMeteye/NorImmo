@@ -26,10 +26,10 @@
         <legend>Merci de remplir tous les champs suivants:</legend>
         <!-- number of square metre-->
             <label for="area">Superficie en m²:</label><br>
-            <input type="number" id="area" name="area"><br><br>
+            <input type="number" id="area" name="area" placeholder="Ex: 75"><br><br>
         <!-- number of room -->
             <label for="room">Nombre de chambre(s):</label><br>
-            <input type="number" id="room" name="room"><br><br>
+            <input type="number" id="room" name="room" placeholder="Ex: 4"><br><br>
         <!-- material drop-down -->
             <label for="materials">Le matériau de construction:</label><br>
             <select id="materials" name="materials">
@@ -41,7 +41,7 @@
             <input id="submitbtn" type="submit" value="Valider">
         <!-- estimate -->
             <legend>Le coût approximatif de votre projet immobilier est de:</legend><br>
-            <p id="estimate"></p>
+            <output id="estimate"></output>
       </fieldset>
     </form>
  </main>
