@@ -27,16 +27,19 @@
             <div>
             <label for="nom">Votre nom</label>
             <input type="text" id="lastName" name="lastName" placeholder="Ex. Dupond">
+            <div id="lastNameError" class="text-color-red"></div>
           </div>
           
           <div>
             <label for="prenom">Votre prénom</label>
             <input type="text" id="firstName" name="firstName" placeholder="Ex. Jean">
+            <div id="firstNameError" class="text-color-red"></div>
           </div>
           
           <div>
             <label for="telephone">Votre téléphone</label>
             <input type="number" id="phone" name="phone" placeholder="Ex. 06 ...">
+            <div id="phoneError" class="text-color-red"></div>
           </div>
           
           <div>
@@ -51,8 +54,8 @@
           <div>
             <label for="message">Votre message</label>
             <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."></textarea>
-            <div id="maxLength"></div>
-            <div id="insult"></div>
+            <div><span id="messageError" class="text-color-red"></span><span id="maxLength"></span>
+            </div>
           </div>
           <div>
             <button id="submit" type="submit">Envoyer</button>
