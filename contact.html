@@ -16,22 +16,24 @@
   <link rel="stylesheet" href="css/contact.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/e9ed8ebcdb.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg pb-0 m-0 d-flex justify-content-around" style="background-color: #3E3E3D;">
     <div class="container-fluid">
-      <a class="navbar-brand color logo logo-2" href="#"><h2 class="color logo">NorImmo</h2></a>
+      <a class="navbar-brand color logo logo-2" href="#"><h2 class="color-2 logo">NorImmo</h2></a>
       <div class="navbar-toggler color-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-center color-2 fs-6">Menu</span>
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active color-2" aria-current="page" href="index.html">Accueil</a>
-          <a class="nav-link color" href="">Foire aux questions</a>
-          <a class="nav-link color" href="contact.html">Contacts</a>
-          <a class="nav-link color" href="Devis.html">Estimation</a>
+          <a class="nav-link color-2" href="index.html"><i class="fas fa-igloo"></i> Accueil</a>
+          <a class="nav-link color-2" href="#"><i class="fas fa-question"></i> F.A.Q</a>
+          <a class="nav-link active color-2" aria-current="page" href="contact.html"><i class="fas fa-phone-alt"></i> Contacts</a>
+          <a class="nav-link color-2" href="Devis.html"><i class="fas fa-euro-sign"></i> Estimation</a>
         </div>
       </div>
     </div>
@@ -48,25 +50,25 @@
            <form id="contactForm" action="#" method="post">
           
             <div>
-            <label for="nom">Votre nom</label>
+            <label>Votre nom</label>
             <input type="text" id="lastName" name="lastName" placeholder="Ex. Dupond">
             <div id="lastNameError" class="text-color-red"></div>
           </div>
           
           <div>
-            <label for="prenom">Votre prénom</label>
+            <label>Votre prénom</label>
             <input type="text" id="firstName" name="firstName" placeholder="Ex. Jean">
             <div id="firstNameError" class="text-color-red"></div>
           </div>
           
           <div>
-            <label for="telephone">Votre téléphone</label>
+            <label>Votre téléphone</label>
             <input type="number" id="phone" name="phone" placeholder="Ex. 06 ...">
             <div id="phoneError" class="text-color-red"></div>
           </div>
           
           <div>
-            <label for="sujet">Quel est l'objet de votre message ?</label>
+            <label>Quel est l'objet de votre message ?</label>
             <select name="object" id="object">
             <option value="" disabled selected hidden>Choisissez un objet</option>
             <option value="devis">Devis</option>
@@ -75,7 +77,7 @@
             </select>
           </div>
           <div>
-            <label for="message">Votre message</label>
+            <label>Votre message</label>
             <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."></textarea>
             <div><span id="messageError" class="text-color-red"></span><span id="maxLength"></span>
             </div>
@@ -85,24 +87,25 @@
           </div>
           </form>
           </div>
+          </main>
 
           <footer class="d-flex justify-content-between align-items-center">
             <div class="responsive">
-              <p class="text-end pt-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              <p class="color-2 text-end pt-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 lla a ut illum in culpa laboriosam assumenda sapiente ratione quas 
                 <span class="logo color">NorImmo</span></p>
                 <p class="color fs-6 p-3">copyright: un petit "c" dans un petit rond, c'est trop mignon. 2021</p>
-        
+          
             </div>
               <aside class="d-flex justify-content-end m-3 w-40 Flex">
-               <div class="d-flex justify-content-between p-3">
-                  <section class="bordercolor"><i class="fab fa-facebook fa-2x color m-2"></i> </section> 
-               <section class="bordercolor"> <i class="fab fa-twitter fa-2x color m-2"></i> </section>
-                <section><i class="fab fa-instagram fa-2x color m-2"></i></section>
-                <h2 class="color-2 logo responsive-2 p-5">NorImmo</h2>
-               </div>
+               <ul class="d-flex justify-content-between p-3">
+                <li class="bordercolor"><i class="fab fa-facebook fa-2x color-2 m-2"></i></li> 
+                <li class="bordercolor"><i class="fab fa-twitter fa-2x color-2 m-2"></i></li>
+                <li><i class="fab fa-instagram fa-2x color-2 m-2"></i></li>
+                <li><h2 class="color-2 logo responsive-2 p-2">NorImmo</h2></li>
+               </ul>
           </aside>
-            
+          
           </footer>
 
 
