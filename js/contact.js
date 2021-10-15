@@ -81,10 +81,14 @@ function checkTextArea() {
     if (this.value.length <= 0 || this.value.length > maxLength || this.value.match(blackList)){
             this.classList.remove('green');
             this.classList.add('red');
-            insultShow.innerHTML = `Les insultes sont interdites !`;
+            if (this.value.match(blackList)){
+              insultShow.innerHTML = `Les insultes sont interdites !`;
+            }
+            else {
+              insultShow.innerHTML = "";
+            }
         } else {       
             this.classList.remove('red');
             this.classList.add('green');
-            insultShow.innerHTML = "";
               }
   }
