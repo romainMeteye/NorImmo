@@ -1,7 +1,16 @@
-ul {
+.imgDefil {
     position: relative;
+    margin: 1vh 5vw 1vh 5vw;
+    height: 100vh;
 }
-.img {
+.imgCarousel {
     position: absolute;
+    margin-top: 5vh;
     width: 90vw;
+    height: 60vh;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+#img3 {
+    opacity: 1;
 }
