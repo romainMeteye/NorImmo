@@ -90,5 +90,6 @@ function checkTextArea() {
         } else {       
             this.classList.remove('red');
             this.classList.add('green');
+            insultShow.innerHTML = "";
               }
   }
