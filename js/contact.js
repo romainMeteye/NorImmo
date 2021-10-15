@@ -13,7 +13,7 @@ document.getElementById("submit").addEventListener("click", function(event){
 //   const message = messageText.value;
   const counterShow = document.getElementById("maxLength");
   const insultShow = document.getElementById("messageError");
-  const maxLength = 20;
+  const maxLength = 400;
   let numberOfChars;
   counterShow.innerHTML = `Caractères restants : ${maxLength}`;
 
