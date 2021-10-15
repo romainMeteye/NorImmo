@@ -83,14 +83,90 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
+<<<<<<< HEAD
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+=======
+* {color: #F5F1E3}
+body {
+  background-color: #7EA3CC;
+}
+
+.color {
+  color: #7EA3CC;
+}
+.color-2 {
+  color: #F5F1E3
+}
+.color-3 {
+  color: #3E3E3D;
+}
+.logo {
+  font-family: 'Permanent Marker', cursive;
+}
+nav>div>button>span {
+  color: #7EA3CC;
+}
+header {
+  height: 120px;
+  width: 100%;
+  background-color:  #7EA3CC;
+  color: #3E3E3D;
+  padding-top: 0;
+  margin-top: 0;
+}
+main{
+  height: 550px;
+  width: 100%;
+  background-color: #F5F1E3;
+
+}
+footer{
+  width: 100%;
+  height: 120px;
+  background-color: #3E3E3D;
+}
+.bordercolor {
+  border-right: 3px solid #F5F1E3;
+}
+footer>div {
+  width: 100%;
+  height: 120px;
+}
+.responsive-2  {
+  display: none;
+}
+@media (max-width: 980px) {
+  .responsive {
+    display: none;
+  }
+  .responsive-2 {
+    display: block;
+  }
+  .Flex {
+    justify-content: center;
+    align-items: center;
+  }
+  footer>aside>div {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-2 {
+    font-size: xx-large;
+  }
+}
+
+
+
+
+
+
+
+>>>>>>> master
 
 /*
  * Hide visually and from screen readers
