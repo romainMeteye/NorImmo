@@ -83,6 +83,12 @@ textarea {
   resize: vertical;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background-color: #7EA3CC;
+}
+>>>>>>> master
 
 .color {
   color: #7EA3CC;
@@ -100,7 +106,7 @@ nav>div>button>span {
   color: #7EA3CC;
 }
 header {
-  height: 120px;
+  height: 20vh;
   width: 100%;
   background-color:  #7EA3CC;
   color: #3E3E3D;
@@ -108,14 +114,12 @@ header {
   margin-top: 0;
 }
 main{
-  height: 550px;
-  width: 100%;
   background-color: #F5F1E3;
 
 }
 footer{
   width: 100%;
-  height: 120px;
+  height: 20vh;
   background-color: #3E3E3D;
 }
 .bordercolor {
@@ -123,10 +127,13 @@ footer{
 }
 footer>div {
   width: 100%;
-  height: 120px;
+  height: 20vh;
 }
 .responsive-2  {
   display: none;
+}
+ul {
+  list-style-type: none;
 }
 @media (max-width: 980px) {
   .responsive {
