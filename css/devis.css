@@ -1,4 +1,4 @@
-.colorHeader {
+.colorBlue {
   background-color: #7EA3CC;
 }
 
@@ -18,4 +18,8 @@
   background-color: rgb(212, 212, 212);
   border-style: outset;
   transition: 1s;
+}
+
+.red {
+  border: 2px solid red;
 }
