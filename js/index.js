@@ -33,6 +33,10 @@ function clicRight() {
     index--;
     imagesCarousel[index].classList.toogle("isDone");
 }
+function clicLeft() {
+    index++;
+    imagesCarousel[index].classList.toogle("isDone");
+}
 
 loopImage();
 // this.classList.toggle("isDone")
