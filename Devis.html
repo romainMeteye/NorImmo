@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="FR">
 
 <head>
   <meta charset="utf-8">
   <title>NorImmo</title>
-  <meta name="description" content="">
+  <meta name="description" content="Entreprise de construction en Normandie">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/e9ed8ebcdb.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -28,77 +28,86 @@
   <!-- ###### Nav ###### -->
   <nav class="navbar navbar-expand-lg pb-0 m-0 d-flex justify-content-around" style="background-color: #3E3E3D;">
     <div class="container-fluid">
-      <a class="navbar-brand color logo logo-2" href="#"><h2 class="color-2 logo">NorImmo</h2></a>
+      <a class="navbar-brand color" href="index.html"><h2 class="color-2 fs-1 fontAcme link1 p-2 rounded">NorImmo</h2></a>
       <div class="navbar-toggler color-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-center color-2 fs-6">Menu</span>
+        <span class="navbar-toggler-icon text-center color-2 fs-5 me-2">Menu</span>
       </div>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse pb-2" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active color-2" aria-current="page" href="index.html"><i class="fas fa-home"></i> Accueil</a>
-          <a class="nav-link color-2" href="#"><i class="fas fa-question"></i> F.A.Q</a>
-          <a class="nav-link color-2" href="contact.html"><i class="fas fa-phone-alt"></i> Contacts</a>
-          <a class="nav-link color-2" href="Devis.html"><i class="fas fa-euro-sign"></i> Estimation</a>
+          <a class="nav-link active color-2 link1 fs-5 rounded-pill mx-2 px-4" aria-current="page" href="index.html"><i class="fas fa-home fa-sm"></i> Accueil</a>
+          <a class="nav-link color-2 link1 fs-5 rounded-pill mx-2 px-4" href="quiz.html"><i class="fas fa-question fa-sm"></i> F.A.Q</a>
+          <a class="nav-link color-2 link1 fs-5 rounded-pill mx-2 px-4" href="contact.html"><i class="fas fa-phone-alt fa-sm"></i> Contacts</a>
+          <a class="nav-link color-2 link1 fs-5 rounded-pill mx-2 px-4" href="Devis.html"><i class="far fa-edit fa-sm"></i> Estimation</a>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- ###### Header ###### -->
-  <header class="d-flex flex-column justify-content-center">
-    <h1 class="text-center color-3"> Bienvenue chez <span class="logo color-2">NorImmo</span></h1>
+  <header class="d-flex flex-column justify-content-center py-3 px-3">
+    <h1 class="text-center color-3 fw-bold">Bienvenue chez <span class="fontAcme color-2">NorImmo</span></h1>
     <h2 class="text-center color-3">Construisons ensemble la maison de vos rêves</h2>
   </header>
 
   <!-- ###### My Main ###### -->
  <main class="color-3 py-5">
-    <h2 class="display-2 text-center text-decoration-underline fw-bold pb-5 pt-0 pt-sm-5">Faire un devis en ligne</h2>
-    <form action=" " method=" " class="container pb-5 py-sm-5">
-      <div class="row justify-content-between align-items-center mx-3">
-        <fieldset class="col-12 col-sm-5 py-2 mb-3 colorHeader">
-            <legend class="text-white">Merci de remplir tous les champs suivants:</legend>
+    <h2 class="display-4 text-center fw-bold pb-5 pt-0 pt-sm-5 mx-3 fontLato"><span class="text-decoration-underline">Faire une estimation en ligne</span><i class="far fa-edit ms-4 d-none d-lg-inline"></i></h2>
+    <div class="container pb-5 py-sm-5">
+      <form action="" method="" class="row justify-content-between align-items-center mx-3">
+        <fieldset class="col-12 col-md-5 py-2 mb-3 colorHeader rounded">
+            <legend class="text-white fw-bold fontLato">Merci de remplir tous les champs suivants:</legend>
           <!-- number of square metre-->
-              <label  class="fw-bold mt-3" for="area">Superficie en m²:</label>
-              <input type="number" id="area" class="form-control mt-1" name="area" placeholder="Ex: 75">
+              <label  class="fs-5 mt-3" for="area">Superficie en m²:</label>
+              <input type="number" id="area" class="form-control mt-1" name="area" placeholder="Ex: 75" min="1">
           <!-- number of room -->
-              <label class="fw-bold mt-3" for="room">Nombre de chambre(s):</label>
-              <input type="number" id="room" class="form-control mt-1" name="room" placeholder="Ex: 4">
+              <label class="fs-5 mt-3" for="room">Nombre de chambre(s):</label>
+              <input type="number" id="room" class="form-control mt-1" name="room" placeholder="Ex: 4" min="1">
           <!-- material drop-down -->
-              <label class="fw-bold mt-3 mb-1" for="materials">Le matériau de construction:</label><br>
-              <select id="materials" name="materials">
+              <label class="fs-5 mt-3 mb-1" for="materials">Le matériau de construction:</label><br>
+              <select id="materials" name="materials" class="fs-5">
+              <option value=""></option>
               <option value="0.2">Parpaing</option>
               <option value="0.15">Bois</option>
               <option value="0.3">Brique</option>
               </select><br>
           <!-- input button -->
-              <input id="submitbtn" class="btn btn-light mt-4" type="submit" value="Valider">
+          <div class="d-flex justify-content-center">
+              <input id="submitbtn" class="btn btn-light shadow fs-5 mt-5 mb-3 me-3" type="submit" value="Valider">
+              <input id="reset" type="reset" class="btn btn-light shadow fs-5 mt-5 mb-3 ms-3" value="Effacer">
+          </div> 
         </fieldset>
           <!-- estimate -->
-        <fieldset class="col-12 col-sm-5 py-2 mt-4 mt-sm-0 colorHeader">
-          <legend class="text-white">Le coût approximatif de votre projet immobilier est de:</legend>
-            <p class="display-6 text-center fw-bold bg-light"><output id="estimate"></output></p>
+        <fieldset class="col-12 col-md-5 py-2 mt-4 mt-sm-5 mt-md-0 colorHeader rounded">
+          <legend class="text-white fw-bold fontLato">Le coût approximatif de votre projet immobilier est de:</legend>
+            <p class="fs-3 text-center fw-bold bg-light"><output id="estimate"></output></p>
         </fieldset>
-      </div>
-    </form>
+      </form>
+      <p class="mt-5 mx-5 text-center fs-5">Pour toutes demandes d'informations ou pour un devis détaillé de votre projet, n'hésitez pas à nous contacter sur notre page <a class="link2 fw-bold" href="contact.html">contact</a>.
+      L'un de nos experts vous répondra dans les plus brefs délais.</p>
+    </div> 
  </main>
 
  <!-- ###### Footer ##### -->
- <footer class="d-flex justify-content-between align-items-center">
-  <div class="responsive">
-    <p class="color-2 text-end pt-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      lla a ut illum in culpa laboriosam assumenda sapiente ratione quas 
-      <span class="logo color">NorImmo</span></p>
-      <p class="color fs-6 p-3">copyright: un petit "c" dans un petit rond, c'est trop mignon. 2021</p>
-
-  </div>
-    <aside class="d-flex justify-content-end m-3 w-40 Flex">
-     <ul class="d-flex justify-content-between p-3">
-      <li class="bordercolor"><i class="fab fa-facebook fa-2x color-2 m-2"></i></li> 
-      <li class="bordercolor"><i class="fab fa-twitter fa-2x color-2 m-2"></i></li>
-      <li><i class="fab fa-instagram fa-2x color-2 m-2"></i></li>
-      <li><h2 class="color-2 logo responsive-2 p-2">NorImmo</h2></li>
+ <footer class="color-2">
+  <div class="d-flex justify-content-between">
+    <div class="d-none d-lg-block fs-5 mt-3">
+      <div class="d-flex justify-content-around align-items-center">
+        <p><i class="far fa-envelope pe-2"></i>Entreprise de construction <span class="fontAcme color">NorImmo</span>:<br>30 chemin des chènes,<br>76100 Rouen</p>
+        <p><i class="fas fa-at pe-2"></i>NorImmo@gmail.com<br><i class="fas fa-phone-alt pe-2"></i>02-35-35-35-35</p>
+      </div>
+    </div>
+    <aside class="d-flex m-3">
+     <ul class="d-flex align-items-center">
+      <li class="bordercolor"><a href="#"><i class="fab fa-facebook fa-2x link3 color-2 p-2"></i></a></li> 
+      <li class="bordercolor"><a href="#"><i class="fab fa-twitter fa-2x link3 color-2 p-2"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram fa-2x link3 color-2 p-2"></i></a></li>
+      <li><h2 class="fontAcme d-lg-none ps-4">NorImmo</h2></li>
      </ul>
-</aside>
-  
+    </aside>
+  </div>
+  <div class="d-none d-md-block">
+    <p class="text-center fs-6 pb-1 m-0">© Copyright 2021 <span class="fontAcme color">NorImmo</span></p>
+  </div>
 </footer>
 
 
