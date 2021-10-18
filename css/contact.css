@@ -23,6 +23,7 @@ main{
 body {
     font-family: Roboto, "sans-serif";
     justify-content: center; 
+    background-color: #F5F1E3;
     }
     
    .form_title {
