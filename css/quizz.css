@@ -1,0 +1,31 @@
+body {
+    background-color: #F5F1E3;
+}
+
+.accordion {
+    margin-left: 5%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 0.5em;
+}
+
+.accordion__answer {
+    display: none;
+    margin-right: 30px;
+  }
+  .accordion.active .accordion__answer {
+    display: block;
+  }
+
+  .accordion__question {
+     cursor: pointer;
+  }
+
+  .fa-dot-circle {
+      font-size: 16px;
+      margin-right: 1em;
+  }
+
+  .accordion__answer p {
+    margin-left: 2em;
+  }
