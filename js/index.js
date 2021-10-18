@@ -1,6 +1,5 @@
 let imagesCarousel = document.getElementsByClassName("imgCarousel");
 let index = imagesCarousel.length;
-let delay;
 let time = 0;
 
 function showImage() {
@@ -28,6 +27,15 @@ function reloadImage() {
     for(let i = 0; i < imagesCarousel.length; i++) {
         imagesCarousel[i].style.opacity = 1;
     }
+}
+function clicRight() {
+    imagesCarousel[index].classList.toogle("isDone");
+    index--;
+    imagesCarousel[index].classList.toogle("isDone");
+}
+function clicLeft() {
+    index++;
+    imagesCarousel[index].classList.toogle("isDone");
 }
 
 loopImage();
