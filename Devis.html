@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>NorImmo</title>
-  <meta name="description" content="Entreprise de construction en Normandie">
+  <meta name="description" content="Entreprise de construction et rénovation en Normandie">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -44,17 +44,17 @@
   </nav>
 
   <!-- ###### Header ###### -->
-  <header class="d-flex flex-column justify-content-center py-3 px-3">
+  <header class="d-flex flex-column justify-content-center py-3">
     <h1 class="text-center color-3 fw-bold">Bienvenue chez <span class="fontAcme color-2">NorImmo</span></h1>
     <h2 class="text-center color-3">Construisons ensemble la maison de vos rêves</h2>
   </header>
 
   <!-- ###### My Main ###### -->
  <main class="color-3 py-5">
-    <h2 class="display-4 text-center fw-bold pb-5 pt-0 pt-sm-5 mx-3 fontLato"><span class="text-decoration-underline">Faire une estimation en ligne</span><i class="far fa-edit ms-4 d-none d-lg-inline"></i></h2>
+    <h2 class="display-4 fontLato text-center fw-bold pb-5 pt-0 pt-sm-5 mx-3"><span class="text-decoration-underline">Faire une estimation en ligne</span><i class="far fa-edit ms-4 d-none d-lg-inline"></i></h2>
     <div class="container pb-5 py-sm-5">
       <form action="" method="" class="row justify-content-between align-items-center mx-3">
-        <fieldset class="col-12 col-md-5 py-2 mb-3 colorHeader rounded">
+        <fieldset class="col-12 col-md-5 colorBlue rounded py-2 mb-3">
             <legend class="text-white fw-bold fontLato">Merci de remplir tous les champs suivants:</legend>
           <!-- number of square metre-->
               <label  class="fs-5 mt-3" for="area">Superficie en m²:</label>
@@ -65,7 +65,7 @@
           <!-- material drop-down -->
               <label class="fs-5 mt-3 mb-1" for="materials">Le matériau de construction:</label><br>
               <select id="materials" name="materials" class="fs-5">
-              <option value=""></option>
+              <option value="">Choisir</option>
               <option value="0.2">Parpaing</option>
               <option value="0.15">Bois</option>
               <option value="0.3">Brique</option>
@@ -77,12 +77,12 @@
           </div> 
         </fieldset>
           <!-- estimate -->
-        <fieldset class="col-12 col-md-5 py-2 mt-4 mt-sm-5 mt-md-0 colorHeader rounded">
+        <fieldset class="col-12 col-md-5 colorBlue rounded py-2 mt-4 mt-sm-5 mt-md-0">
           <legend class="text-white fw-bold fontLato">Le coût approximatif de votre projet immobilier est de:</legend>
             <p class="fs-3 text-center fw-bold bg-light"><output id="estimate"></output></p>
         </fieldset>
       </form>
-      <p class="mt-5 mx-5 text-center fs-5">Pour toutes demandes d'informations ou pour un devis détaillé de votre projet, n'hésitez pas à nous contacter sur notre page <a class="link2 fw-bold" href="contact.html">contact</a>.
+      <p class="text-center fs-5 mt-5 mx-5">Pour toutes demandes d'informations ou pour un devis détaillé de votre projet, n'hésitez pas à nous contacter sur notre page <a class="link2 fw-bold" href="contact.html">contact</a>.
       L'un de nos experts vous répondra dans les plus brefs délais.</p>
     </div> 
  </main>
@@ -109,7 +109,6 @@
     <p class="text-center fs-6 pb-1 m-0">© Copyright 2021 <span class="fontAcme color">NorImmo</span></p>
   </div>
 </footer>
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
