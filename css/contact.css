@@ -1,7 +1,6 @@
 main{
     height: auto;
     width: 100%;
-    background-color: #F5F1E3;
   }
 
   .contactez-nous h3, label, #maxLength {
@@ -24,10 +23,12 @@ main{
 body {
     font-family: Roboto, "sans-serif";
     justify-content: center; 
+    background-color: #F5F1E3;
     }
     
    .form_title {
        text-align: center;
+       font-size: 22px;
        text-transform: uppercase;
        margin: 0.5em;
        padding-bottom: 10px;

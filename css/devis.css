@@ -1,4 +1,25 @@
-.colorHeader {
+.colorBlue {
   background-color: #7EA3CC;
 }
 
+.fontLato {
+  font-family: 'Lato', sans-serif;
+}
+
+.link2 {
+  color: #3E3E3D;
+  text-decoration: none;
+}
+.link2:hover {
+  color:#3E3E3D;
+}
+
+.btn:hover {
+  background-color: rgb(212, 212, 212);
+  border-style: outset;
+  transition: 1s;
+}
+
+.red {
+  border: 2px solid red;
+}

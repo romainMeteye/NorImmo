@@ -82,11 +82,6 @@ fieldset {
 textarea {
   resize: vertical;
 }
-
-body {
-  background-color: #7EA3CC;
-}
-
 .color {
   color: #7EA3CC;
 }
@@ -96,14 +91,10 @@ body {
 .color-3 {
   color: #3E3E3D;
 }
-.logo {
-  font-family: 'Permanent Marker', cursive;
-}
 nav>div>button>span {
   color: #7EA3CC;
 }
 header {
-  height: 20vh;
   width: 100%;
   background-color:  #7EA3CC;
   color: #3E3E3D;
@@ -112,11 +103,9 @@ header {
 }
 main{
   background-color: #F5F1E3;
-
 }
 footer{
   width: 100%;
-  height: 20vh;
   background-color: #3E3E3D;
 }
 .bordercolor {
@@ -124,7 +113,6 @@ footer{
 }
 footer>div {
   width: 100%;
-  height: 20vh;
 }
 .responsive-2  {
   display: none;
@@ -132,33 +120,42 @@ footer>div {
 ul {
   list-style-type: none;
 }
-.quiz {
-  opacity: 0;
+
+/* new layout */
+
+.link1:hover {
+  background-color: #F5F1e3;
+  color: #3E3E3D;
+  transition: 1s;
 }
-@media (max-width: 980px) {
-  .responsive {
-    display: none;
-  }
-  .responsive-2 {
-    display: block;
-  }
-  .Flex {
-    justify-content: center;
-    align-items: center;
-  }
-  footer>aside>div {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo-2 {
-    font-size: xx-large;
-  }
+.fontAcme {
+  font-family: 'Acme', sans-serif;
 }
 
+header {
+  border-bottom: 2px solid #3E3E3D;
+}
 
+h1 {
+  font-size: 2.5rem;
+}
+.d-lg-block {
+  width: 100%;
+}
 
+.link3:hover {
+  color: #3E3E3D;
+  background-color: #F5F1e3;
+}
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  header>h2 {
+    font-size: 2.5rem;
+  }
+}
 
 
 

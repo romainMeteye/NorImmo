@@ -1,16 +1,51 @@
 .imgDefil {
     position: relative;
-    margin: 1vh 5vw 1vh 5vw;
-    height: 100vh;
+    height: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 92%;
+    background-color: brown;
 }
 .imgCarousel {
     position: absolute;
-    margin-top: 5vh;
-    width: 90vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
     transition-property: opacity;
     transition-duration: 2s;
 }
-#img3 {
+.carouselButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    text-align: center;
+    opacity: 0.3;
+    transition: opacity 0.15s;
+    border: 0;
+    background: black;
+}
+.leftButton {
+    left: 0;
+}
+.rightButton {
+    right: 0;
+}
+#presentation {
+    margin-top: 2rem;
+}
+.isDone {
     opacity: 1;
+}
+@media (min-width: 500px) {
+    .imgDefil {
+        height: 75vh;
+    }
+}
+@media (min-width: 620px) {
+    .imgDefil {
+        margin-left: 3vw;
+    }
 }
